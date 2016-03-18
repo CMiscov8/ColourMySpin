@@ -17,20 +17,20 @@
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.here {
-  background-image: url('photos/background.jpg');
+/* .hero {
+ background-image: url('photos/background.jpg');
   background-size: cover;
-  color: #fff;
+  color: #eee;
   padding-bottom: 5rem;
-}
-.phones {
+} */
+.spins {
   position: relative;
 }
-.phone {
+.spin {
   max-width: 80%;
   margin: 3rem auto -12rem;
 }
-.phone + .phone {
+.spin + .spin {
   display: none;
 }
 
@@ -81,14 +81,14 @@
     text-align: left;
     height: 165px;
   }
-  .phone {
+  .spin {
     position: relative;
     top: -7rem;
     right: 3rem;
     max-height: 362px;
     z-index: 3;
   }
-  .phone + .phone {
+  .spin + .spin {
     top: -6rem;
     display: block;
     max-width: 73.8%;
@@ -120,12 +120,12 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .phone {
+  .spin {
     top: -14rem;
     right: 5rem;
     max-height: 510px;
   }
-  .phone + .phone {
+  .spin + .spin {
     top: -12rem;
     max-height: 472px;
   }
@@ -145,11 +145,11 @@
   .hero-heading {
     font-size: 3.0rem;
   }
-  .phone {
+  .spin {
     top: -16rem;
     max-height: 615px;
   }
-  .phone + .phone {
+  .spin + .spin {
     top: -14rem;
     max-height: 570px;
   }
