@@ -27,7 +27,6 @@
   position: relative;
 }
 .phone {
-  position: relative;
   max-width: 80%;
   margin: 3rem auto -12rem;
 }
@@ -83,7 +82,7 @@
     height: 165px;
   }
   .phone {
-    position: absolute;
+    position: relative;
     top: -7rem;
     right: 3rem;
     max-height: 362px;
