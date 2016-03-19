@@ -50,9 +50,9 @@
 			</div>
 
 			<div class="five columns">Colours<br />
-				<div class="palette" id="red"></div>
-				<div class="palette" id="white"></div>
-				<div class="palette" id="blue"></div>
+				<div class="palette" id="pink" background="#FF05C1"></div>
+				<div class="palette" id="natural" background="FFFFFF"></div>
+				<div class="palette" id="dk-blue" background="#29006B"></div>
 			</div>
 
 			<div class="five columns">
@@ -70,7 +70,7 @@
 		$(".panels").droppable({
 		  drop: function(e, ui) {
 		    console.log(ui.draggable)
-		    $(this).css("background", ui.draggable.attr("id"));
+		    $(this).css("background", ui.draggable.attr("background"));
 		  }
 		});
 	});
