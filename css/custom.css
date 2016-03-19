@@ -60,32 +60,39 @@
     border: 1px solid black;
     position: relative;
     width: 50px;
-    height: 50px;
+    height: 25px;
     left: 10px;
     top: 10px;
 }
-#pink {
-	background: #FF05C1;
-}
-#natural {
-	background: FFFFFF;
-}
-#dk-blue {
-	background: #29006B;
-}
+#black {background: #000000;}
+#grey {background: #BBBBBB;}
+#natural {background: #FAFAFA;}
+#lt-blue {background: #B6E6E6;}
+#oc-blue {background: #00CDCD;}
+#green {background: #099F22;}
+#dk-blue {background: #29006B;}
+#navy {background: #000033;}
+#purple {background: #66004C;}
+#red {background: #E00000;}
+#orange {background: #FF4800;}
+#coast-gold {background: #FFB00E;}
+#yellow {background: #FCFF4D;}
+#fl-yellow {background: #CCFF00;}
+#fl-orange {background: #FD5F00;}
+#fl-pink {background: #FF6666;}
+#fl-raspberry {background: #FF3399;}
+#fl-green {background: #3DFF33;}
 
-/* Panels
+/* Panels 1493
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .panels {
 	border: 1px solid black;
+	background: white;
 	position: relative;
 	width: 50px;
 	height: 50px;
 	left: 10px;
 	top: 10px;
-}
-#panel-1 {
-	background: black;
 }
 
 /* Help
