@@ -64,14 +64,28 @@
     left: 10px;
     top: 10px;
 }
-.red {
-	background: red;
+#pink {
+	background: #FF05C1;
 }
-.white {
-	background: white;
+#natural {
+	background: FFFFFF;
 }
-.blue {
-	background: blue;
+#dk-blue {
+	background: #29006B;
+}
+
+/* Panels
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.panels {
+	border: 1px solid black;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	left: 10px;
+	top: 10px;
+}
+#panel-1 {
+	background: black;
 }
 
 /* Help

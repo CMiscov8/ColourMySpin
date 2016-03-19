@@ -26,6 +26,7 @@
 	<!-- Scripts
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
 	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 	<!-- Favicon
@@ -49,19 +50,31 @@
 			</div>
 
 			<div class="five columns">Colours<br />
-				<div class="palette red"></div>
-				<div class="palette white"></div>
-				<div class="palette blue"></div>
+				<div class="palette" id="pink" background="#FF05C1"></div>
+				<div class="palette" id="natural" background="FFFFFF"></div>
+				<div class="palette" id="dk-blue" background="#29006B"></div>
 			</div>
 
 			<div class="five columns">
 				<img class="u-max-full-width" src="photos/sundayrace2.jpg">
+				<div class="panels" id="panel-1"></div>
 			</div>
 
 		</div>
 
-
-
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".palette").draggable({
+		  revert:true
+		});
+		$(".panels").droppable({
+		  drop: function(e, ui) {
+		    console.log(ui.draggable)
+		    $(this).css("background", ui.draggable.attr("background"));
+		  }
+		});
+	});
+</script>
 
 	</div>
 </body>
