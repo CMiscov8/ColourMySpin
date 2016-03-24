@@ -64,24 +64,24 @@
     left: 10px;
     top: 10px;
 }
-#black {background: #000000;}
-#grey {background: #BBBBBB;}
-#natural {background: #FAFAFA;}
-#lt-blue {background: #B6E6E6;}
-#oc-blue {background: #00CDCD;}
-#green {background: #099F22;}
-#dk-blue {background: #29006B;}
-#navy {background: #000033;}
-#purple {background: #66004C;}
-#red {background: #E00000;}
-#orange {background: #FF4800;}
-#coast-gold {background: #FFB00E;}
-#yellow {background: #FCFF4D;}
-#fl-yellow {background: #CCFF00;}
-#fl-orange {background: #FD5F00;}
-#fl-pink {background: #FF6666;}
-#fl-raspberry {background: #FF3399;}
-#fl-green {background: #3DFF33;}
+#black {background: rgba(0,0,0,1);} 			/* (0,0,0)	#000000 (0%,0%,0%) */
+#grey {background: rgba(187,187,187,1);} 		/* (187,187,187) #BBBBBB (0%,0%,73.3%) */
+#natural {background: rgba(250,250,250,1);} 	/* #FAFAFA */
+#lt-blue {background: rgba(182,230,230,1);} 	/* #B6E6E6 */
+#oc-blue {background: rgba(0,205,205,1);} 		/* #00CDCD */
+#green {background: rgba(9,159,34,1);} 			/* #099F22 */
+#dk-blue {background: rgba(41,0,107,1);}	 	/* #29006B */
+#navy {background: rgba(0,0,51,1);}				/* #000033 */
+#purple {background: rgba(102,0,76,1);} 		/* #66004C */
+#red {background: rgba(224,0,0,1);}		 		/* #E00000 */
+#orange {background: rgba(255,72,0,1);} 		/* #FF4800 */
+#coast-gold {background: rgba(255,176,14,1);} 	/* #FFB00E */
+#yellow {background: rgba(252,255,77,1);} 		/* #FCFF4D */
+#fl-yellow {background: rgba(204,255,0,1);}		/* #CCFF00 */
+#fl-orange {background: rgba(253,95,0,1);} 		/* #FD5F00 */
+#fl-pink {background: rgba(255,102,102,1);} 	/* #FF6666 */
+#fl-raspberry {background: rgba(255,51,153,1);}	/* #FF3399 */
+#fl-green {background: rgba(61,255,51,1);}	 	/* #3DFF33 */
 
 /* Panels 1493
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

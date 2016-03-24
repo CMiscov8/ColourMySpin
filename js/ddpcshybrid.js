@@ -3,14 +3,25 @@ var ctx = canvas.getContext("2d");
 
 var img = new Image();
 img.crossOrigin = "anonymous";
-img.onload = start; // don't need this as well as droppable
+img.onload = 
+    $(document).ready(function() {
+        $(".palette").draggable({
+          revert:true
+        });
+        $(".panels").droppable({
+          drop: function(e, ui) {
+            console.log(ui.draggable)
+            $(this).css("background", ui.draggable.attr("background"));
+          }
+        });
+    });
 img.src = "images/assy6-2.gif";
 
 function start() {
     ctx.drawImage(img, 0, 0);
     ctx.drawImage(img, 170, 0); // don't need second version of the image
     // shift blueish colors to greenish colors
-    recolorPanel(-.1);  
+    recolorPanel(-.5);  
     //recolorPanel function should be the droppable, 
     //with the new colour passed in from the draggable's background
 }
