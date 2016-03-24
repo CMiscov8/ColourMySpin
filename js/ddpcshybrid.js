@@ -19,9 +19,11 @@ img.src = "images/assy6-2.gif";
 
 function start() {
     ctx.drawImage(img, 0, 0);
-    ctx.drawImage(img, 170, 0); // don't need second version of the image
+    //ctx.drawImage(img, 170, 0); don't need second version of the image
+
     // shift blueish colors to greenish colors
-    recolorPanel(-.5);  
+    //recolorPanel(-.5);  
+    
     //recolorPanel function should be the droppable, 
     //with the new colour passed in from the draggable's background
 }
@@ -45,15 +47,15 @@ function recolorPanel(colorshift) {
             continue;
         }
 
-        var hsl = rgbToHsl(red, green, blue);
-        var hue = hsl.h * 360;
+        //var hsl = rgbToHsl(red, green, blue);
+        //var hue = hsl.h * 360;
 
         // change blueish pixels to the new color
         if (hue > 200 && hue < 300) {
-            var newRgb = hslToRgb(hsl.h + colorshift, hsl.s, hsl.l);
-            data[i + 0] = newRgb.r;
-            data[i + 1] = newRgb.g;
-            data[i + 2] = newRgb.b;
+            var newRgb = hslToRgb(hsl.h, hsl.s, hsl.l); //+ colorshift
+            data[i + 0] = 224;
+            data[i + 1] = 0;
+            data[i + 2] = 0;
             data[i + 3] = 255;
         }
     }
@@ -62,7 +64,7 @@ function recolorPanel(colorshift) {
 
 //don't need these two functions?
 
-function rgbToHsl(r, g, b) {
+/*function rgbToHsl(r, g, b) {
     r /= 255, g /= 255, b /= 255;
     var max = Math.max(r, g, b),
         min = Math.min(r, g, b);
@@ -122,4 +124,4 @@ function hslToRgb(h, s, l) {
         g: Math.round(g * 255),
         b: Math.round(b * 255),
     });
-}
+}*/
