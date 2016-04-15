@@ -1,20 +1,42 @@
 	$(document).ready(function() {
 		
-		var color
-		var circle = document.getElementById("round")
+		var myPanels = document.querySelectorAll("#round");
 
 		$(".palette").draggable({
 			revert:true
 		});
 
-		$( ".palette" ).mousedown(function() {
-			color = $( this ).css( "background-color" );
-			$( "#result" ).html( "That div is " + color );
+		$("svg").droppable({
+		  drop: function(e, ui) {
+		    console.log(ui.draggable)
+
+		    for (var i = 0; i < myPanels.length; i++) {
+		        myPanels[i].style.fill = ui.draggable.attr("background");
+		    }
+		  }
 		});
 
-		// $( "#round" ).mouseup(function() {
-		// 	$(this).css("fill:blue");
+		// $(".panels").droppable({
+		//   drop: function(e, ui) {
+		//     console.log(ui.draggable)
+		//     $(this).css("background", ui.draggable.attr("background"));
+		//   }
 		// });
 
+		// $("circle #round").droppable({
+		//   drop: function(e, ui) {
+		//     console.log(ui.draggable)
+		//     $(this).css("fill", blue);
+		//   }
+		// });
+
+		// $( ".palette" ).mousedown(function() {
+		// 	color = $( this ).css( "background-color" );
+		// 	$( "#result" ).html( "That div is " + color );
+		// });
+
+
+
 	});
+
 
